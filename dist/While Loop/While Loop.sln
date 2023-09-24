@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "While Loop", "While Loop.csproj", "{633305BF-7442-49C7-A4DF-75041FA198EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{633305BF-7442-49C7-A4DF-75041FA198EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{633305BF-7442-49C7-A4DF-75041FA198EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{633305BF-7442-49C7-A4DF-75041FA198EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{633305BF-7442-49C7-A4DF-75041FA198EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7255410B-9C27-49BA-BA8E-53F1BB5CD36B}
+	EndGlobalSection
+EndGlobal

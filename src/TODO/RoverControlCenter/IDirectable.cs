@@ -1,0 +1,7 @@
+namespace RoverControlCenter
+{
+  interface IDirectable
+  {
+
+  }
+}

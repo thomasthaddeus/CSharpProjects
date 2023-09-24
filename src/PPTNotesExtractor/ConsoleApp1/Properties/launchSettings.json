@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "WSL": {
+      "commandName": "Executable",
+      "distributionName": "WSL2"
+    },
+    "PowerpointText": {
+      "commandName": "Project",
+      "commandLineArgs": "TP04.pptx",
+      "workingDirectory": "C:\\Users\\Thaddeus Maximus\\Source\\PptxScraper\\Application Files\\ConsoleApp1_1_0_0_1",
+      "nativeDebugging": true
+    }
+  }
+}

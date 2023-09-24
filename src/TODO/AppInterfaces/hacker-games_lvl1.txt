@@ -1,0 +1,10 @@
+{data=t,data=u,data=l,data=r,data=d,data=e,data=t,data=b,data=a,data=b}
+
+116116981011001141081019898
+t t b e d r l e b b
+
+'u', 'd', 'l', 'r', 'e', 't', 'a', 'b'
+
+
+start start b select down right left select b b
+

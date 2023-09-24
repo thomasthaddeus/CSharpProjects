@@ -1,0 +1,76 @@
+csharp
+Copy code
+using System;
+
+namespace SpaceProbes
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Rover moonRover1 = new Rover("Moon Rover 1", "Moon");
+            Rover moonRover2 = new Rover("Moon Rover 2", "Moon");
+            Rover marsRover = new Rover("Mars Rover", "Mars");
+            Satellite satellite = new Satellite("Earth Satellite", "Earth");
+
+            Rover[] rovers = new Rover[] { moonRover1, moonRover2, marsRover };
+
+            DirectAll(rovers);
+
+            Object[] spaceProbes = new Object[] { moonRover1, moonRover2, marsRover, satellite };
+
+            foreach (var probe in spaceProbes)
+            {
+                Console.WriteLine($"Tracking a {probe.GetType()}...");
+            }
+
+            IDirectable[] directables = new IDirectable[] { moonRover1, moonRover2, marsRover, satellite };
+
+            DirectAll(directables);
+        }
+
+        static void DirectAll(Rover[] rovers)
+        {
+            foreach (Rover rover in rovers)
+            {
+                Console.WriteLine(rover.GetInfo());
+                Console.WriteLine(rover.Explore());
+                Console.WriteLine(rover.Collect());
+            }
+        }
+
+        static void DirectAll(IDirectable[] directables)
+        {
+            foreach (IDirectable directable in directables)
+            {
+                Console.WriteLine(directable.GetInfo());
+                Console.WriteLine(directable.Explore());
+                Console.WriteLine(directable.Collect());
+            }
+        }
+    }
+
+    public interface IDirectable
+    {
+        string GetInfo();
+        string Explore();
+        string Collect();
+    }
+}
+In Rover.cs, add IDirectable to the list of interfaces implemented by the Rover class:
+
+csharp
+Copy code
+public class Rover : IDirectable
+{
+    // ...
+}
+In Satellite.cs, add IDirectable to the list of interfaces implemented by the Satellite class:
+
+csharp
+Copy code
+public class Satellite : IDirectable
+{
+    // ...
+}
+Now you've created an array of type IDirectable[] containing all the probes, and you've updated the DirectAll() method so it accepts an argument of type IDirectable[]. The Rover and Satellite classes implement the IDirectable interface, so you can manage them in the same array and use the shared methods.

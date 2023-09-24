@@ -1,0 +1,23 @@
+using System;
+
+namespace GenericType
+{
+    class Program
+    {
+        class StoreAnything <T> //class StoreInt has 2 integers, with set and get functions set to each variable
+        {
+            public T var1 { set; get; }
+        }
+        
+        static void Main(string[] args)
+        {
+            //create new object of StoreAnything class, passing string type
+            StoreAnything<string> MyVar1 = new StoreAnything<string> { var1 = "CS" };
+            
+            //create another new object of StoreAnything class, passing int type
+            StoreAnything<int> MyVar2 = new StoreAnything<int> { var1 = 131 };
+            
+            Console.WriteLine(MyVar1.var1 + " " + MyVar2.var1); //print new values of var1
+        }
+    }
+}
